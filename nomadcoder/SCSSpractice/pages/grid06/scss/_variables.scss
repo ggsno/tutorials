@@ -1,0 +1,25 @@
+$color-main: #e7473c;
+$color-sub: #f0f0f0;
+$color-comp: #099C46;
+$border-main: 1px $color-main solid;
+$border-sub: 1px $color-sub solid;
+
+@mixin rotate($direction) {
+  @if $direction == "left" {
+    writing-mode: vertical-lr;
+    transform: scale(-1, -1);
+  } @else if $direction == "right" {
+    writing-mode: vertical-rl;
+  }
+}
+
+@mixin theme($select) {
+  @if $select == "main" {
+    color: $color-main;
+    background-color: $color-sub;
+  } @else if $select == "sub" {
+    color: $color-sub;
+    background-color: $color-main;
+  }
+}
+

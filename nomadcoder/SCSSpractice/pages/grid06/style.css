@@ -1,0 +1,145 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+.concept-list {
+  display: grid;
+  height: 100%;
+  grid-template-rows: repeat(auto-fit, 1fr);
+}
+.concept-list .concept-item {
+  color: #e7473c;
+  background-color: #f0f0f0;
+  display: grid;
+  grid-template-columns: minmax(25px, 3.3%) minmax(500px, 70%) minmax(175px, 30%);
+  border-top: 1px #e7473c solid;
+  border-left: 1px #e7473c solid;
+  border-right: 1px #e7473c solid;
+}
+.concept-list .concept-item:last-child {
+  border-bottom: 1px #e7473c solid;
+}
+.concept-list .concept-item .host-name {
+  writing-mode: vertical-lr;
+  transform: scale(-1, -1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+}
+.concept-list .concept-item .concept-title {
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  padding: 0px 10px;
+  border-left: 1px #e7473c solid;
+  border-right: 1px #e7473c solid;
+}
+.concept-list .concept-item .link-wrapper {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.concept-list .concept-item .link-wrapper .concept-category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  border-bottom: 1px #e7473c solid;
+}
+.concept-list .concept-item .link-wrapper .holding-date {
+  color: #f0f0f0;
+  background-color: #e7473c;
+  margin: 5px;
+  border-radius: 20px;
+  border-style: none;
+  cursor: pointer;
+}
+.concept-list .concept-item:hover {
+  color: #f0f0f0;
+  background-color: #e7473c;
+}
+.concept-list .concept-item:hover .concept-title {
+  border-left: 1px #f0f0f0 solid;
+  border-right: 1px #f0f0f0 solid;
+}
+.concept-list .concept-item:hover .concept-category {
+  border-bottom: 1px #f0f0f0 solid;
+}
+.concept-list .concept-item:hover .holding-date {
+  color: #e7473c;
+  background-color: #f0f0f0;
+}
+
+.border-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(#e7473c, #f0f0f0);
+  border-left: 1px #f0f0f0 solid;
+}
+.border-container .borderline-info:first-child {
+  writing-mode: vertical-rl;
+  color: #f0f0f0;
+  padding: 10px 0px;
+}
+.border-container .borderline-info:nth-child(2) {
+  width: inherit;
+  height: 5%;
+  width: 100%;
+  min-height: 25px;
+  min-width: 25px;
+  background-image: url(./img/tomato.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.border-container .borderline-info:last-child {
+  writing-mode: vertical-lr;
+  transform: scale(-1, -1);
+  color: #e7473c;
+  padding: 10px 0px;
+}
+
+.info-container {
+  color: #f0f0f0;
+  background-color: #e7473c;
+  padding: 10px;
+}
+
+.content-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+}
+
+.content-wrapper {
+  display: grid;
+  grid-auto-rows: minmax(min-content, 15vh);
+  grid-template-columns: 1fr 1fr;
+}
+.content-wrapper .content {
+  border-top: 1px #f0f0f0 solid;
+  margin: 10px;
+  padding: 10px 0px;
+}
+.content-wrapper .content h2 {
+  font-size: 120%;
+  margin-bottom: 5px;
+}
+
+.container-wrapper {
+  display: grid;
+  grid-template-columns: minmax(700px, 60vw) minmax(25px, 3vw) minmax(500px, 35vw);
+}
+
+/*# sourceMappingURL=style.css.map */

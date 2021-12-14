@@ -1,0 +1,56 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+.blind {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+}
+
+.gallery-container header {
+  display: grid;
+  grid-template: 20px / repeat(auto-fit, minmax(8em, 1fr));
+}
+
+.gallery-container .item-wrapper {
+  display: grid;
+  grid-auto-rows: minmax(150px, 33vh);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.gallery-container .item {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.gallery-container .item .info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 15px;
+}
+
+.gallery-container .item .info-wrapper a {
+  color: inherit;
+}
+
+.gallery-container .item .thumbnail {
+  width: minmax();
+  height: 80%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 10px;
+}
+
+.gallery-container .item:nth-child(odd) .thumbnail {
+  background-image: url(img/1.jpg);
+}
+
+.gallery-container .item:nth-child(even) .thumbnail {
+  background-image: url(img/2.jpg);
+}

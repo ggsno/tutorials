@@ -1,0 +1,73 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(3, minmax(max-content,25vmin));
+  grid-template-columns: repeat(4,30vmin);
+}
+/* minmax(max-content, 30vmin) */
+.container div {
+  padding: 5px;
+}
+
+.container div:nth-child(1) {
+  background-color: black;
+  color: white;
+  font-size: 4vmin;
+}
+
+.container div:nth-child(2) {
+  background-color: red;
+  color: black;
+  font-size: 4vmin;
+  grid-row: span 2;
+}
+
+.container div:nth-child(3) {
+  background-color: #6701F2;
+}
+
+.container div:nth-child(4) {
+  background-color: white;
+}
+
+.container div:nth-child(5) {
+  background-color: #FFC904;
+  color: black;
+  font-size: 4vmin;
+}
+
+.container div:nth-child(6) {
+  background-color: white;
+  color: black;
+  font-size: 4vmin;
+  grid-row: span 3;
+}
+.container div:nth-child(6) p:nth-child(7) {
+  background-color: #6C01FF
+}
+
+.container div:nth-child(6) p:first-child {
+  font-size: 3vmin;
+  padding: 5px 0px 20px;
+}
+
+.container div:nth-child(7) {
+  background-color: white;
+  color: black;
+  font-size: 4vmin;
+  grid-row: span 3;
+}
+
+.container div:nth-child(7) p:first-child {
+  font-size: 3vmin;
+  padding: 5px 0px 20px;
+}

@@ -1,0 +1,37 @@
+@use "_variables" as var;
+
+.border-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(var.$color-main, var.$color-sub);
+  border-left: var.$border-sub;
+
+  .borderline-info:first-child {
+    @include var.rotate("right");
+    color: var.$color-sub;
+    padding: 10px 0px;
+  }
+  
+  .borderline-info:nth-child(2) {
+    width: inherit;
+    height: 5%;
+    width: 100%;
+    min-height: 25px;
+    min-width: 25px;
+    background: {
+      image: url(./img/tomato.png);
+      size: contain;
+      repeat: no-repeat;
+      position: center;
+    };
+  }
+  
+  .borderline-info:last-child {
+    @include var.rotate("left");
+    color: var.$color-main;
+    padding: 10px 0px;
+  }
+}
+

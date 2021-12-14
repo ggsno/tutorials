@@ -1,0 +1,31 @@
+@use "_variables" as var;
+
+.info-container {
+  @include var.theme("sub");
+  padding: 10px;
+}
+
+.content-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  
+}
+
+.content-wrapper {
+  display: grid;
+  grid-auto-rows: minmax(min-content, 15vh);
+  grid-template-columns: 1fr 1fr;
+
+  .content {
+    border-top: var.$border-sub;
+    margin: 10px;
+    padding: 10px 0px;
+
+    h2 {
+      font-size: 120%;
+      margin-bottom: 5px;
+    }
+  }
+}

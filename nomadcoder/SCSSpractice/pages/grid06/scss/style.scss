@@ -1,0 +1,9 @@
+@use "_reset";
+@use "_list";
+@use "_border";
+@use "_information";
+
+.container-wrapper {
+  display: grid;
+  grid-template-columns: minmax(700px, 60vw) minmax(25px, 3vw) minmax(500px, 35vw);
+}
