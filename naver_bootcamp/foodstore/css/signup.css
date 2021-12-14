@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+.content-wrap {
+  overflow: hidden;
+}
+
+.content {
+  width: 1000px;
+  margin: 100px auto 40px;
+  border: 1px solid #d1d1d1;
+  padding: 30px 30px;
+  box-sizing: border-box;
+}
+.item-title {
+  font-size: 14px;
+  margin: 0px;
+  font-weight: bold;
+  text-align: left;
+  padding-bottom: 15px;
+}
+
+.inner-border {
+  border: 1px solid #e4e4e4;
+  padding: 0px 20px;
+}
+
+.form-box {
+  background-color: #fbfbfb;
+}
+
+.form-item {
+  margin: 20px 0px;
+}
+
+.form-title {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  margin-top: 5px;
+  font-size: 12px;
+  height: 35px;
+  width: 100%;
+  border: 1px solid #e4e4e4;
+  text-indent: 10px;
+  padding: 0px;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.form-birthday-slt{
+  margin-top: 5px;
+  font-size: 12px;
+  height: 35px;
+  width: 289px;
+  border: 1px solid #e4e4e4;
+  text-indent: 5px;
+  box-sizing:border-box;
+}
+
+.form-birthday-slt+.form-birthday-slt {
+  margin-left: 14px;
+}
+
+.form-togglebox {
+  display: inline-block;
+  width: 112px;
+  margin-top: 5px;
+}
+
+.form-togglebox input {
+  margin-left: 2px;
+}
+
+.form-togglebox label {
+  font-size: 12px;
+  vertical-align: 3px;
+}
+
+.form-phone {
+  width: 79%;
+  float: left;
+}
+
+.btn {
+  border: 1px solid #08a600;
+  background-color: #4ec53d;
+  color: #fff;
+  padding: 0px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.btn-verification {
+  font-size: 12px;
+  width: 20%;
+  height: 35px;
+  margin-top: 5px;
+  float: right;
+}
+
+.btn-submit {
+  font-size: 16px;
+  width: 100%;
+  height: 45px;
+}
+
+.form-item textarea {
+  width: 100%;
+  height: 150px;
+  border: 1px solid #e4e4e4;
+  box-sizing: border-box;
+}

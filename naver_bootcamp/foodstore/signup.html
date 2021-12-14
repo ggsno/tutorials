@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Naver Boostcourse PRJ2 [foodstore] - signup page</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+  <header class="header-container">
+    <nav class="nav-container clearfix">
+      <a href="main.html" class="header-logo">
+        <i class="logo">
+          <span class="blind">메인으로 가기</span>
+        </i>
+      </a>
+    </nav>
+  </header>
+  <main class="content-wrap">
+    <form action="#" class="content">
+      <fieldset>
+        <legend class="item-title">회원가입</legend>
+        <div class="form-box inner-border">
+          <div class="form-item">
+            <label for="userId" class="form-title">아이디</label>
+            <input type="text" class="form-input" id="userId" name="user-id">
+          </div>
+          <div class="form-item">
+            <label for="userPassword" class="form-title">비밀번호</label>
+            <input type="password" class="form-input" id="userPassword" name="user-password">
+          </div>
+          <div class="form-item">
+            <label for="userName" class="form-title">이름</label>
+            <input type="text" class="form-input" id="userName" name="user-name">
+          </div>
+          <div class="form-item">
+            <h3 class="form-title">생년월일</h3>
+            <div class="form-birthday">
+              <select class="form-birthday-slt" name="year" id="year">
+                <option value="">년도</option>
+              </select><select class="form-birthday-slt" name="month" id="month">
+                <option value="">월</option>
+              </select><select class="form-birthday-slt" name="day" id="day">
+                <option value="">일</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-item">
+            <h3 class="form-title">성별</h3>
+            <div class="form-togglebox">
+              <input type="radio" id="male" name="gender" value="male"><label for="male">남자</label>
+            </div><div class="form-togglebox">
+              <input type="radio" id="female" name="gender" value="female"><label for="female">여자</label>
+            </div>
+          </div>
+          <div class="form-item">
+            <label for="userEmail" class="form-title">이메일</label>
+            <input type="email" class="form-input" id="userEmail" name="user-email" placeholder="이메일 주소에 '@'를 포함해주세요.">
+          </div>
+          <div class="form-item">
+            <label for="userTel" class="form-title">휴대전화</label>
+            <input type="tel" class="form-input form-phone" id="userTel" name="user-tel" placeholder="숫자만 입력해주세요.">
+            <button type="button" class="btn btn-verification">인증번호 받기</button>  
+            <input type="text" class="form-input" placeholder="인증번호를 입력해주세요.">
+          </div>
+          <div class="form-item">
+            <h3 class="form-title">취미</h3>
+            <div class="form-togglebox">
+              <input type="checkbox" name="hobby" id="exercise"><label for="exercise">운동</label>
+            </div><div class="form-togglebox">
+              <input type="checkbox" name="hobby" id="cook"><label for="cook">요리</label>
+            </div><div class="form-togglebox">
+              <input type="checkbox" name="hobby" id="travel"><label for="travel">여행</label>
+            </div><div class="form-togglebox">
+              <input type="checkbox" name="hobby" id="game"><label for="game">게임</label>
+            </div><div class="form-togglebox">
+              <input type="checkbox" name="hobby" id="computer"><label for="computer">컴퓨터</label>
+            </div><div class="form-togglebox">
+              <input type="checkbox" name="hobby" id="music"><label for="music">음악</label>
+            </div><div class="form-togglebox">
+              <input type="checkbox" name="hobby" id="movie"><label for="movie">영화</label>
+            </div><div class="form-togglebox">
+              <input type="checkbox" name="hobby" id="book"><label for="book">책</label>
+            </div>
+          </div>
+          <div class="form-item">
+            <label for="greeting" class="form-title">가입인사</label>
+            <textarea name="greeting" id="greeting"></textarea>
+          </div>
+          <div class="form-item">
+            <input type="submit" class="btn btn-submit" value="가입하기">
+          </div>
+        </div>
+      </fieldset>        
+    </form>
+  </main>
+  <footer class="footer-container">
+    <address class="address-area">
+      주소: 경북 경산시 옥산동, E-MAIL: ogs0518@naver.com
+    </address>
+    <div class="copyright-area">
+      Copyright © O Kang San. All Rights Reserved.
+    </div>
+  </footer>
+</body>
+</html>

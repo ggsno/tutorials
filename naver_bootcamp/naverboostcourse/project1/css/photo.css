@@ -1,0 +1,27 @@
+.photo-content {
+  padding: 50px;
+  text-align: left;
+}
+
+.photo-content+.photo-content{
+  border-top: solid 1px gray;
+}
+
+.photo-image {
+  float: left;
+}
+
+.birthday-image {
+  display: inline-block;
+  width: 200px;
+  height: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-image: url(../image/birthday.jpeg);
+}
+
+.photo-description {
+  padding-left: 250px;
+  line-height: 30px;
+}

@@ -1,0 +1,66 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  background-color:#DDE1D4;
+  padding:15px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100%;
+  height: 100vh;
+  margin:0 auto;
+}
+
+.poster-wrapper {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  height: 50vw;
+}
+
+.poster-wrapper p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.partition {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+}
+
+.poster-wrapper > p:nth-child(1) {
+  background-color: #FFFFFF;
+  color: #1A1B17;
+}
+
+.poster-wrapper > p:nth-child(2) {
+  background-color: #CC3423;
+  color: #FFFFFF;
+}
+
+.poster-wrapper > p:nth-child(3) {
+  background-color: #546220;
+  color: #FFFFFF;
+}
+
+.partition > p:nth-child(1) {
+  background-color: #F1C9AC;
+  color: #1A1B17;
+}
+
+.partition > p:nth-child(2) {
+  background-color: #3D3E6C;
+  color: #FFFFFF;
+}
+
+.partition > p:nth-child(3) {
+  background-color: #006594;
+  color: #FFFFFF;
+}
+
+.partition > p:nth-child(4) {
+  background-color: #1A1B17;
+  color: #FFFFFF;
+}
+
+

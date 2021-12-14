@@ -1,0 +1,161 @@
+@charset "utf-8";
+
+.signup-link {
+  float: right;
+  text-decoration: none;
+  line-height: 25px;
+  color: #000;
+}
+
+.signup-link:hover {
+  font-weight: bold;
+}
+
+.signup-link:visited {
+  color: #000;
+}
+
+.component-wrap {
+  background-image: url("../image/section_store.jpg");
+  background-position: center;
+  min-width: 1080px;
+}
+.component {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0px 40px;
+}
+
+.component-title {
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid #454545;
+  padding-bottom: 20px;
+}
+
+.content-wrap {
+  width: 1000px;
+  margin: auto 0;
+  padding-top: 300px;
+}
+
+.fruit-item {
+  float: left;
+  width: 230px;
+  height: 230px;
+  position: relative;
+  margin-bottom: 140px;
+}
+
+.fruit-item+.fruit-item {
+  margin-left: 26px;
+}
+
+.fruit-item:nth-child(5n) {
+  margin-left: 0;
+}
+
+.fruit-link {
+  display: table;
+  text-decoration: none;
+}
+
+.dimmed-layer {
+  display: none;
+  position: absolute;
+  border-radius: 5%;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(96,132,2,0.9);
+}
+
+.fruit-link:focus .dimmed-layer,
+.fruit-link:hover .dimmed-layer {
+  display: block;
+}
+
+.discount-rate {
+  position: absolute;
+  left: 50px;
+  color: white;
+  font-size: 65px;
+  text-align: center;
+  top: 70px;
+}
+
+.discount-time {
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  top: 135px;
+  left: 50px;
+}
+
+.fruit-img {
+  display: block;
+  width: 230px;
+  height: 230px;
+  border-radius: 5%;
+  overflow: hidden;
+  position: relative;
+}
+
+.thumbnail-apple {
+  background-image: url(../image/thumbnail_apple.jpg);
+}
+
+.thumbnail-onion {
+  background-image: url(../image/thumbnail_onion.jpg);
+}
+
+.thumbnail-banana {
+  background-image: url(../image/thumbnail_banana.jpg);
+}
+
+.thumbnail-kiwi {
+  background-image: url(../image/thumbnail_kiwi.jpg);
+}
+
+.thumbnail-broccoli {
+  background-image: url(../image/thumbnail_broccoli.jpg);
+}
+
+.thumbnail-lemon {
+  background-image: url(../image/thumbnail_lemon.jpg);
+}
+
+.thumbnail-garlic {
+  background-image: url(../image/thumbnail_garlic.jpg);
+}
+
+.thumbnail-tomato {
+  background-image: url(../image/thumbnail_tomato.jpg);
+}
+
+.fruit-discript {
+  margin-top: 20px; 
+  text-align: center;
+}
+
+.fruit-discript .fruit-name {
+  font-size: 20px;
+  padding: 0 10px;
+  width: 210px;
+  color: #1b1d21;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.fruit-discript .fruit-price {
+  font-size: 28px;
+  color: #1b1d21;
+}
+
+.fruit-price .monetary-unit {
+  font-size: 20px;
+}
