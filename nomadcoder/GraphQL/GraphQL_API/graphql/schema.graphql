@@ -1,7 +1,7 @@
 type Movie {
   id: Int!
   title: String!
-  rating: Int!
+  rating: Float!
   summary: String
   medium_cover_image: String
 }
