@@ -4,9 +4,11 @@ type Movie {
   rating: Float!
   summary: String
   medium_cover_image: String
+  background_image: String
 }
 
 type Query {
-  movies: [Movie]!
+  getMovies: [Movie]!
+  getById(id: Int!): Movie
 }
 

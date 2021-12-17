@@ -1,11 +1,13 @@
-import { getMovies } from "./db.js";
+import { getById, getMovies } from "./db.js";
 
 const resolvers = {
   Query: {
-    movies: () => getMovies()
+    getMovies: () => getMovies(),
+    getById: (_, { id }) => getById(id),
   },
   
 };
 
 
 export default resolvers;
+
