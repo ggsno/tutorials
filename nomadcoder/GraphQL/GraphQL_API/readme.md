@@ -1,4 +1,13 @@
-# 시작
+# 개요
+
+- GraphQL로 API 서버 만들기
+
+## 실행
+
+yarn start
+http://localhost:4000/
+
+# set up
 
 ```jsx
 // terminal
