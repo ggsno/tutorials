@@ -152,7 +152,7 @@ MyComponent.propTypes = {
 # CSS
 
 - CSS를 주는 방법들
-    - render하는 js파일에 CSS파일을 import
+    1. render하는 js파일에 CSS파일을 import
         
         ```jsx
         import ReactDOM from "react-dom";
@@ -165,8 +165,8 @@ MyComponent.propTypes = {
         );
         ```
         
-    - property로 style 값을 전달
-    - CSS module 사용
+    2. property로 style 값을 전달
+    3. CSS module 사용
         
         ```css
         /* Button.module.css */
@@ -191,7 +191,7 @@ MyComponent.propTypes = {
         ```
         
 
-## effect
+# effect
 
 - state가 바뀔 때 마다 새로 render됨
 - API call처럼 한 번만 해도 되는 것도 render 될 때마다 call 됨
@@ -227,11 +227,11 @@ function App() {
 export default App;
 ```
 
-## 알아둬
+# 알아둬
 
 - component는 단지 jsx를 return하는 function임
 
-## Cleanup
+# Cleanup
 
 - component가 destroy됐을 때 실행되는 함수
 - useEffect의 콜백함수의 리턴 값으로 전달되는 함수
@@ -264,6 +264,8 @@ function App() {
 
 export default App;
 ```
+
+# 실습
 
 ## todo list 만들기
 
@@ -340,11 +342,14 @@ function App() {
 export default App;
 ```
 
+
+# etc
+
 ## key
 
 React에서만 map 안에서 component들을 render할 때 사용
 
-# Router
+## Router
 
 - react-router-dom
 - route : 도메인 뒤의 URL
@@ -352,13 +357,13 @@ React에서만 map 안에서 component들을 render할 때 사용
 - routing : 렌더하는 파일(App.js)이 router를(component를) render함
 - 하나의 router에서 두 개 이상의 렌더링도 가능
 
-## router
+### router
 
 - 라우터는 두 가지가 있음
     - browser router : 일반적인 라우터
     - hash router : 도메인 뒤에 해쉬(#)가 붙음
 
-## switch
+### switch
 
 - route를 찾아 컴포넌트를 렌더링함
 
