@@ -11,7 +11,7 @@ const GET_MOVIES = gql`
   }
 `;
 const Home = () => {
-  const { loading, error, data } = useQuery(GET_MOVIES);
+  const { loading, data } = useQuery(GET_MOVIES);
   if (loading) return "Loading ...";
   if (data?.getMovies) {
     return (

@@ -1,22 +1,24 @@
 import React from "react";
 import { gql, useQuery } from "@apollo/client";
-import Movie from "../components/Movie";
 import { useParams } from "react-router-dom";
 
-const Detail = () => {
-  const { id } = useParams();
-  const GET_BYID = gql`
+const GET_BYID = gql`
 {
-  getById(id:${id}){
+  getById(id:$id){
     id
     title
     background_image
   }
 }
 `;
-  const { loading, error, data } = useQuery(GET_BYID);
+
+const Detail = () => {
+  const { id } = useParams();
+  
+  const { loading, data } = useQuery(GET_BYID, {
+    variables: { id }
+  });
   if (loading) return "Loading ...";
-  console.log(data.getById.background_image);
   if (data?.getById)
     return (
       <div>
